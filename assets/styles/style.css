@@ -1,0 +1,238 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #6b7ab3; 
+  color: #000;
+  line-height: 1.4;
+}
+
+.infographic-container {
+  max-width: 1080px;
+  margin: auto;
+}
+
+/* Fonts */
+.main-title {
+  font-family: 'Lakki Reddy', cursive;
+  font-size: 72px;
+  color: #0D1282;
+  text-align: center;
+}
+.subtitle {
+  font-family: 'Lacquer', cursive;
+  font-size: 28px;
+  color: #D71313;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.section-title {
+  font-family: 'Lakki Reddy', cursive;
+  font-size: 42px;
+  text-align: center;
+  margin: 20px 0;
+}
+.section-title.red { color: #D71313; }
+.section-title.blue { color: #0D1282; }
+.section-title.yellow { color: #F3B95F; }
+
+/* Header Section */
+.header-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.header-map {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.header-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-title {
+  font-family: 'Lakki Reddy', cursive;
+  font-size: 64px;
+  color: #0D1282;
+}
+.subtitle {
+  font-family: 'Lacquer', cursive;
+  font-size: 26px;
+  color: #D71313;
+  margin-top: -8px;
+}
+
+/* Legend Row */
+.legend-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.legend-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.legend-images img {
+  height: 200px; 
+  width: auto;
+  object-fit: contain;
+  border: 2px solid #000;
+}
+
+.legend-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.legend-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.legend-square {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border: 1px solid #000;
+}
+
+.legend-square.urban {
+  background: #F2C1D7;
+}
+
+.legend-square.rural {
+  background: #DAB2CC;
+}
+
+.legend-desc {
+  font-size: 16px;
+  max-width: 300px;
+  text-align: left;
+}
+
+
+
+
+/* Philippines Section */
+.philippines-section {
+  background: rgba(44,78,128,0.2);
+  padding: 20px;
+  text-align: center;
+}
+.chart-img {
+  max-width: 250px;
+  margin-top: 10px;
+}
+
+/* Stats */
+.stats-section {
+  display: flex;
+  gap: 20px;
+  margin: 40px 0;
+}
+.stats-left, .stats-right {
+  flex: 1;
+  text-align: center;
+}
+.stats-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.stats-images img {
+  width: 100px;
+  border: 2px solid #000;
+}
+
+/* Employment */
+.employment-section {
+  background: rgba(44,78,128,0.2);
+  padding: 20px;
+  text-align: center;
+}
+.employment-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 15px 0;
+}
+.employment-images img {
+  width: 180px;
+  border: 2px solid #000;
+}
+
+/* Dual Section */
+.dual-section {
+  display: flex;
+  gap: 20px;
+  margin: 40px 0;
+}
+.what-if, .bridging {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+.what-if { background: rgba(44,78,128,0.2); }
+.bridging { background: rgba(15, 35, 83, 0.5); }
+.box-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.box-images img {
+  width: 100px;
+  border: 2px solid #000;
+}
+
+/* Final */
+.final-section {
+  text-align: center;
+  margin: 40px 0;
+}
+.final-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.final-images img {
+  width: 200px;
+  border: 2px solid #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .legend-section, .stats-section, .employment-images, .dual-section, .final-images {
+    flex-direction: column;
+    align-items: center;
+  }
+}
